@@ -1,0 +1,14 @@
+{
+  "name": "typescript-course",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/rodrigocunhaf/typescript-course.git",
+  "author": "Rodrigo Cunha França <rodrigocunhaf@github.com>",
+  "license": "MIT",
+  "scripts": {
+    "start":"live-server"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
