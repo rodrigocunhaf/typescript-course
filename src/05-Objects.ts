@@ -1,6 +1,6 @@
 //Objects
 
-const  person : { 
+const  personExample05 : { 
             name: string;
             age: number
 
@@ -9,4 +9,4 @@ const  person : {
             age:19
         }   
 
-console.log(person)
+console.log(personExample05)

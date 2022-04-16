@@ -1,6 +1,6 @@
 //Type Boolean
 
-function add ( num1:number , num2:number , result: string , operation: boolean) {
+function addExample3 ( num1:number , num2:number , result: string , operation: boolean) {
     let total : number;
     
     if (operation){
@@ -12,4 +12,4 @@ function add ( num1:number , num2:number , result: string , operation: boolean) 
     };
 };
 
-add(1,2, 'Total is:', true)
+addExample3(1,2, 'Total is:', true)

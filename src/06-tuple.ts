@@ -1,6 +1,6 @@
 //Tuple
 
-const  person : { 
+const  personExample06 : { 
     name: string;
     age: number;
     codename: [ number, string];
@@ -11,4 +11,4 @@ const  person : {
     codename:[1, 'SuperMan']
 }   
 
-console.log( person.codename)
+console.log( personExample06.codename)
