@@ -252,6 +252,12 @@ class Form implements Component <SubmitEvent> {
         this.submitHandler();
     };
 
+    clearForm(){
+        this.title.value ='';
+        this.description.value='';
+        this.peoples.value='';
+    };
+
     submitHandler(){
         const { title, description, peoples } = { title:this.title.value , description:this.description.value, peoples:this.peoples.value};  
     
@@ -260,6 +266,7 @@ class Form implements Component <SubmitEvent> {
         if (isProject instanceof Project){
             progressList.addProjectOnList(isProject);
             ItemGenerator(isProject, progressList);
+            this.clearForm();
             return;
         };
         return;
@@ -279,17 +286,11 @@ class Validation {
     static isValid( inputs:string[], maxId:number) {
         let text='';
 
-        if(!inputs[0]){
-            text+=ErrosList.TITLE;
-        };
+        !inputs[0] ? text+=ErrosList.TITLE : "";
 
-        if(!inputs[1]){
-            text+=ErrosList.DESCRIPTION;
-        };
+        !inputs[1] ? text+=ErrosList.DESCRIPTION : "";
 
-        if (!+inputs[2]){
-            text+=ErrosList.PEOPLES;
-        }
+        !+inputs[2] ? text+=ErrosList.PEOPLES : "";
 
         if (text.length > 0){
             alert(text);
